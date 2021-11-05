@@ -33,7 +33,7 @@ class Car extends Vehicle {
     }
 
     scheduleService(mileage) {
-        if(this.mileage > 30000) {
+        if (this.mileage > 30000) {
             console.log("time to get some services done!")
         } else {
             console.log("drive safe!")
