@@ -20,7 +20,7 @@ class Car extends Vehicle {
 
     }
 
-    start(noParameters) {
+    start() {
 
     }
 
