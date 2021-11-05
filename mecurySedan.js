@@ -13,7 +13,6 @@ class Car extends Vehicle {
         this.maximumSpeed = 200
         this.fuel = 100
         this.scheduleService = false
-        this.started = false;
     }
 
     loadPassenger(num) {
@@ -21,7 +20,11 @@ class Car extends Vehicle {
     }
 
     start() {
-
+        if (this.fuel > 0) {
+            console.log("engine started...!!!");
+        } else {
+            console.log("engine cannot start...");
+        }
     }
 
     scheduleService(mileage) {
@@ -34,3 +37,4 @@ let v = new Car("Mecury", "Sedan", "1965", "color", "mileage");
 console.log(v.make)
 console.log(v.model)
 v.accelerate()
+v.start()
