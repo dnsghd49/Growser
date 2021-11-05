@@ -30,7 +30,7 @@ class Vehicle {
                 this.stop();
             }
         } else {
-            alert("You need to start the engine first.");
+            console.log("You need to start the engine first.");
         }
     }
     decelerate() {
@@ -48,7 +48,7 @@ class Vehicle {
                 this.stop();
             }
         } else {
-            alert("You need to start the engine first.");
+            console.log("You need to start the engine first.");
         }
     }
     stop() {
@@ -86,6 +86,4 @@ class Vehicle {
 }
 
 //This exports things you want to use from this "module", more info in readme
-module.exports = {
-    Vehicle
-}
+export default Vehicle
