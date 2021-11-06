@@ -23,6 +23,7 @@ class Car extends Vehicle {
 
     start() {
         if (this.fuel > 0) {
+            return this.started = true;
             console.log("engine started...!!!");
         } else {
             console.log("engine cannot start...");
@@ -42,7 +43,8 @@ class Car extends Vehicle {
 let v = new Car("Mecury", "Sedan", "1965", "color", 500000, 5);
 console.log(v.make)
 console.log(v.model)
-v.accelerate()
 v.start()
+v.accelerate()
 v.scheduleService()
 v.loadPassenger()
+for (var i = 1; i <= 50; i++) v.decelerate(i);
